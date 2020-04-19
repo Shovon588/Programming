@@ -1,6 +1,6 @@
 ## Author: Md. Minul Islam Shovon
 Department of Electrical & Computer Engineering </br>
-Rajshahi University of Engineering & Technolgoy </br>
+Rajshahi University of Engineering & Technology </br>
 
 # Online Judge Profile
 Codeforces: https://codeforces.com/profile/SHOVON588 </br>
