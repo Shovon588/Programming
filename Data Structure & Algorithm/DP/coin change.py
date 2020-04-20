@@ -1,4 +1,4 @@
-coin=[4,5]
+coin=[5,3,2]
 
 
 def call(i,amount):
