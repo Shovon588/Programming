@@ -3,9 +3,10 @@ for i in range(int(input())):
     a=list(map(int,input().split()))
     a.sort()
     
-    res=0
-    for i in range(0,2*n,2):
-        temp = abs(a[i]-a[i+1])
-        res = max(res,temp)
+    if n==1:
+        print(abs(a[0]-a[1]))
+    else:
+        n = (2*n)-1
+        n = n//2
 
-    print(res)
+        print(abs(a[n]-a[n+1]))
