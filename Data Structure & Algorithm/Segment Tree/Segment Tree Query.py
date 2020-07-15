@@ -2,6 +2,7 @@ def func(node,low,high):
     if low==high:
         tree[node]=a[low-1]
         return
+    
     left=2*node
     right=(2*node)+1
     mid=(low+high)//2
