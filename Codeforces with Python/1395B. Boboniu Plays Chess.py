@@ -42,7 +42,8 @@ while(1):
             next_move='left'
             while x<=n:
                 if arr[x-1][y-1]==-1:
-                    print(x)
+                    arr[x-1][y-1]=1
+                    print(x,y)
                     break
                 x+=1
     else:
@@ -52,6 +53,8 @@ while(1):
             next_move='right'
             while x<=n:
                 if arr[x-1][y-1]==-1:
+                    arr[x-1][y-1]=1
+                    print(x,y)
                     break
                 x+=1
 
