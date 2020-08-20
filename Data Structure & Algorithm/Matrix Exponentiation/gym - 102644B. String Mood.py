@@ -23,7 +23,6 @@ def expo_power(arr,n):
 
         arr = multiply(arr,arr)
         n = n//2
-        print(arr)
     return result
 
 arr = [[19,7],
