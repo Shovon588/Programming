@@ -1,11 +1,21 @@
 a,b=map(int,input().split())
 
-def gcd(a,b):
-    if a%b==0:return b
-    else:return gcd(b,a%b)
+def gcd_recursive(a,b):
+    if b==0:
+        return a
 
-g=gcd(a,b)
-print('GCD=',g)
+    return gcd(b, a%b)
 
-l=(a*b)//g #a*b=g*l
-print('LCM=',l)
+
+
+def gcd_iterative(a,b):
+    while b>0:
+        a = a%b
+        a,b = b,a
+
+    return a
+
+
+def lcm(a,b):
+    result = (a*b)//gcd_iterative(a,b)
+    return result
