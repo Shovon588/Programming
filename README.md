@@ -1,8 +1,8 @@
-## Author: Md. Minul Islam Shovon
-Department of Electrical & Computer Engineering </br>
-Rajshahi University of Engineering & Technology </br>
+# Md. Minul Islam Shovon
+### Department of Electrical & Computer Engineering </br>
+### Rajshahi University of Engineering & Technology </br>
 
-# Online Judge Profile
+# Online Judge Profiles
 Codeforces: https://codeforces.com/profile/SHOVON588 </br>
 Hackerrank: https://www.hackerrank.com/mainulislam588 </br>
 Toph: https://toph.co/u/mainulislam588 </br>
