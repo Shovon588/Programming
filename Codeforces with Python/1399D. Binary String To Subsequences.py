@@ -1,18 +1,35 @@
-def find_and_update(n):
-    pass
+T = int(input())
+ 
+for _ in range(T):
+    N = int(input())
+    s = list(input())
 
 
-for I in range(int(input())):
-    n = int(input())
-    s = input()
-
-    arr = [-1 for i in range(n)]
-    
-    zeros = []
-    ones = []
-
-    for i,char in enumerate(s):
-        if char=='1':
-            ones.append(i)
+    d = {"0": [], "1": []}
+    move = 0
+    ans = []
+    for c in s:
+        print(d)
+        if c == "1":
+            arr = d["0"]
+            if not len(arr) == 0:
+                    tmp = arr.pop()
+                    ans.append(tmp)
+                    d["1"].append(tmp)
+            else:
+                    move += 1
+                    ans.append(move)
+                    d["1"].append(move)
         else:
-            zeros.append(i)
+            arr = d["1"]
+            if not len(arr) == 0:
+                    tmp = arr.pop()
+                    ans.append(tmp)
+                    d["0"].append(tmp)
+            else:
+                    move += 1
+                    ans.append(move)
+                    d["0"].append(move)
+
+    print(move)
+    print(*ans)
