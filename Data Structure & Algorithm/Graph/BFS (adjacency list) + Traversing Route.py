@@ -4,6 +4,7 @@ v,e = map(int,input().split())
 adj = [[] for i in range(v+1)] # Creating an empty list for adjacency list
 level = [0 for i in range(v+1)] # Creating a list for visited nodes
 
+
 print('Enter the connections between the vertex:')
 for i in range(e):
     start, end = map(int,input().split())
@@ -14,8 +15,9 @@ for i in range(e):
 
 que = [] # Queue to push nodes or pop from
 
-starting = 1 # starting node
-ending = 6
+starting = 6 # starting node
+ending = 3
+
 
 que.append(starting) # appending the starting the node to the queue
 level[starting]=1 # marking the starting node as visited
@@ -43,6 +45,7 @@ for i in range(len(parent)):
 		break
 
 route = route[::-1]
+
 print("Traversing route:")
 print(*route)
 
